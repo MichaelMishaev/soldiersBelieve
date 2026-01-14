@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="light" dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec",
+              "accent": "#00d2ff",
+              "background-light": "#f8fafc",
+              "background-dark": "#0f172a",
+            },
+            fontFamily: {
+              "sans": ["Assistant", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1.25rem", "2xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-background-light dark:bg-background-dark font-sans text-slate-900 dark:text-slate-100;
+                -webkit-tap-highlight-color: transparent;
+            }
+        }
+        .glass-header {
+            @apply sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50;
+        }
+        .program-card {
+            @apply relative overflow-hidden transition-all duration-300 active:scale-[0.98] shadow-lg shadow-slate-200/50 dark:shadow-none;
+        }
+        .image-overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.1) 100%);
+        }
+        .vibrant-button {
+            @apply bg-gradient-to-r from-primary to-accent text-white font-bold py-2.5 px-6 rounded-xl shadow-lg shadow-primary/30 transition-all hover:brightness-110 active:opacity-90;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen">
+<header class="glass-header">
+<div class="flex items-center justify-between px-5 h-16 max-w-md mx-auto">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">
+<span class="material-symbols-outlined text-2xl">arrow_forward</span>
+</button>
+<h1 class="text-xl font-extrabold tracking-tight">תכניות העמותה</h1>
+<div class="w-10"></div>
+</div>
+</header>
+<main class="max-w-md mx-auto pb-32">
+<section class="px-6 pt-8 pb-6">
+<div class="space-y-3">
+<span class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full">העתיד שלך מתחיל כאן</span>
+<p class="text-lg font-medium leading-relaxed text-slate-600 dark:text-slate-400">
+                    תכניות הליווי והתמיכה שלנו עוצבו במיוחד עבורך, כדי להבטיח שירות משמעותי בלי לוותר על הערכים.
+                </p>
+</div>
+</section>
+<section class="px-5 grid grid-cols-1 gap-6">
+<div class="program-card aspect-[4/5] rounded-2xl">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAVDrV-Qp8Rl3sp1xWp60TzwQRiVlJfAY2XAGTYqz8rxBsFvxSHloGqSX7BSdLPVyThJoEz_j3IAG0Yvx5hon1cgWkEPuMn-KT7rCjTrjhs7zfgbe4Ez--Azt1aMu7Y_YWfZYMLWsaaIYjc1pqzGzebFQDo2Fe9yvd-Vy2SdDJe6CETF8UOW83JP_FK9B3xvr36Ch8JJG3KPpw3EHktQsXkEbAAqBsTPf9uToXDmjLNmxdm6gfK_jlZPCZGGJym3FdZiEh4xoI-2Dc");'></div>
+<div class="absolute inset-0 image-overlay"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-amber-400 text-black text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-lg shadow-xl">פופולרי</span>
+</div>
+<div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
+<h3 class="text-2xl font-extrabold mb-1">מכינה קדם-צבאית</h3>
+<p class="text-white/80 text-sm mb-4 line-clamp-2">בניית חוסן רוחני וכושר קרבי לקראת שירות משמעותי ביחידות המובחרות.</p>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-[10px] text-white/60 font-bold uppercase tracking-widest">קהל יעד</span>
+<span class="text-xs font-medium">בוגרי כיתה י"ב</span>
+</div>
+<button class="vibrant-button text-sm">
+                            לפרטים
+                        </button>
+</div>
+</div>
+</div>
+<div class="program-card aspect-[4/5] rounded-2xl">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDeP9u8InVdXKVqdS7pYqF7oeKuFBzwH-wyQJEuBkH2sf3Saci-tOMv3e5r-0skiEBSyivQr4YsXF5bAOwae6tKO5M7_iFLOmAguJeacrOQ3ZO1TpuVSa0xUoAillr2RD2GJQ3p6gl6h0srO1Pw4Sec8v-bUIQHlUhIU-yzcFutKb-PxbqHAYY4ld8sCVR874Xq065KpY0RwOgf3AeFnOC6gxh8k9stDlAQ8eIhmEpmHsKEo5wTLBIk9YiSOURdQ0nn0jVGG-vwdr8");'></div>
+<div class="absolute inset-0 image-overlay"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-lg shadow-xl">חדש</span>
+</div>
+<div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
+<h3 class="text-2xl font-extrabold mb-1">ליווי במהלך השירות</h3>
+<p class="text-white/80 text-sm mb-4 line-clamp-2">מעטפת תמיכה הלכתית, נפשית וחברתית לאורך כל השירות הצבאי שלך.</p>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-[10px] text-white/60 font-bold uppercase tracking-widest">זמינות</span>
+<span class="text-xs font-medium">מענה אנושי 24/6</span>
+</div>
+<button class="vibrant-button text-sm">
+                            להצטרפות
+                        </button>
+</div>
+</div>
+</div>
+<div class="program-card aspect-[4/5] rounded-2xl">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAqWOgYiothJppY5AOWnYEoJGQaxwCYEVOeLv7n_zwlzHdOEVWPJ_E67cel8Vy_o_qq-Unw56NUAjYgzUCv1qEiBetju5BisWHy3P1QZS9gPRB3q2KYubWT2seJAgbOG05jJFFFwcylPqZB_qsjvmk8Ut5psazejE6ZPbNDMxZd0Wf8H2FLJkyW5QxItkCzTpKDPd_121d7At4Pfcz3VORP4CEbJ2heEwyrWvgVAeGQrod--slP7uMW_aEsdDsCHBiuieypZc8rVP0");'></div>
+<div class="absolute inset-0 image-overlay"></div>
+<div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
+<h3 class="text-2xl font-extrabold mb-1">רשת הבוגרים</h3>
+<p class="text-white/80 text-sm mb-4 line-clamp-2">הכוונה ללימודים, תעסוקה ונטוורקינג עם בכירי המשק הישראלי.</p>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-[10px] text-white/60 font-bold uppercase tracking-widest">חברים</span>
+<span class="text-xs font-medium">+2,500 בוגרים</span>
+</div>
+<button class="vibrant-button text-sm">
+                            גלה עוד
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<footer class="px-6 py-12 text-center">
+<div class="h-px bg-slate-200 dark:bg-slate-800 w-full mb-8"></div>
+<p class="text-xs text-slate-400 font-medium">
+                © 2024 העמותה לשירות משמעותי. כל הזכויות שמורות
+            </p>
+</footer>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-background-dark/90 backdrop-blur-xl border-t border-slate-200/50 dark:border-slate-800/50 pb-8 pt-3 px-6 z-50">
+<div class="flex justify-between items-center max-w-md mx-auto">
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined text-[26px]">home</span>
+<span class="text-[11px] font-bold">בית</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined text-[26px] fill-1">grid_view</span>
+<span class="text-[11px] font-bold">תכניות</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined text-[26px]">chat_bubble</span>
+<span class="text-[11px] font-bold">ייעוץ</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined text-[26px]">account_circle</span>
+<span class="text-[11px] font-bold">פרופיל</span>
+</a>
+</div>
+</nav>
+
+</body></html>

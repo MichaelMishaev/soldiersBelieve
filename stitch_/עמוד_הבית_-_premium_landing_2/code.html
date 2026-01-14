@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>עמוד הבית - Premium Landing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#067ff9",
+                        "accent-gold": "#FFD700",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1923",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .neon-glow {
+            text-shadow: 0 0 10px rgba(6, 127, 249, 0.6), 0 0 20px rgba(6, 127, 249, 0.4);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #FFD700 0%, #B8860B 100%);
+        }
+        .blue-gradient {
+            background: linear-gradient(135deg, #067ff9 0%, #034f9c 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-white font-display">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 z-50 w-full bg-background-dark/80 backdrop-blur-md border-b border-white/10">
+<div class="flex items-center p-4 justify-between max-w-lg mx-auto">
+<div class="text-white flex items-center cursor-pointer">
+<span class="material-symbols-outlined">menu</span>
+</div>
+<h2 class="text-white text-lg font-black leading-tight tracking-tight flex-1 text-center">
+                PREMIUM <span class="text-primary">LANDING</span>
+</h2>
+<div class="flex items-center justify-end">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary/20 text-primary">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-14 pb-24">
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+<!-- Background "Video" Placeholder -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent z-10"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="Cinematic shot of elite IDF soldiers in training" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDOdyfaK3zWLp8R-WSAY-q073XphVbZxmm2CY79hsrBl1LxSaj7P55g9D5TweweDPi6nkPcCKUvHojyQwnWsVeDGvA2HXsZnAWaa9gF9srpOPdvuraSj54LgeMn3dOrDB5X0-ob32R0HpvtikU16-yfwAt8I_lPwoDPBVhRtwzwTXasrNlMJNrbTQZQ5YnXXiEj8gn3-WUkdw5KM0FB-34hFXSvIsClD8r0Pp0fUrQhLn33DgkxjjvPcSUpuF1b9YTPTjayIniB3-o');"></div>
+</div>
+<div class="relative z-20 px-6 text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold mb-6">
+<span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+                    ההרשמה למחזור נובמבר החלה
+                </div>
+<h1 class="text-4xl @[480px]:text-6xl font-black leading-tight tracking-tighter text-white neon-glow mb-4">
+                    תורה, עוצמה, <br/>
+<span class="text-primary">פיקוד עילית.</span>
+</h1>
+<p class="text-gray-400 text-base @[480px]:text-lg max-w-xs mx-auto mb-10 leading-relaxed">
+                    הגשר בין מצוינות תורנית להובלה ביחידות המובחרות של צה"ל מתחיל כאן.
+                </p>
+<div class="flex flex-col gap-4 w-full max-w-xs mx-auto">
+<button class="w-full py-4 rounded-xl blue-gradient text-white font-bold text-lg shadow-lg shadow-primary/30 flex items-center justify-center gap-2">
+<span>הצטרפו לנבחרת</span>
+<span class="material-symbols-outlined">trending_flat</span>
+</button>
+<button class="w-full py-4 rounded-xl border border-white/20 bg-white/5 backdrop-blur-sm text-white font-bold text-lg flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">play_circle</span>
+<span>צפו בחזון</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Social Proof Ribbon -->
+<section class="py-8 bg-white/5 border-y border-white/5">
+<p class="text-center text-gray-500 text-xs font-bold tracking-widest uppercase mb-6">יחידות ושותפים לדרך</p>
+<div class="flex gap-10 overflow-x-hidden whitespace-nowrap px-4 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+<div class="flex h-12 shrink-0 items-center justify-center px-4">
+<img alt="Logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHJb2d6pd83wgXqJwIFgKGr9jwI5ySHbUn_7hc6lQbTUY52CWPUi-ZHcWg7UjshFkg4eT1q-zxQiQU2P6VWazK6PMrhIUSRbTwH7xx5q3QaGalPTyfsTxAwXKnmfKSXxfFVTG2zMx0cez-ifODORtF7rO_ooahgj1WHL0RAAzySdTpAxKQhwPfp0TGLI6udlXAbGoSXhVpiqsidR-M8-fFwES08wFmdYz4tOb4rpywtUIcXusEPEHvi6pMyWLZ9jD2gAacYOv_EM0"/>
+</div>
+<div class="flex h-12 shrink-0 items-center justify-center px-4">
+<img alt="Logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwVwwjuyW4WvnSAgldAyGqQ4ORGe6vBQ45_-ZtvqIcm2c-beAktJogatbIyTkoPdrKnO8Y8gH0jMP03JP0dpnkzQAtcFLWkwhqm8wmoxlwxungLQPWDTHFfPnEptupzo_4HfodZEcjXIWxdVokIhOXF_JM8KKkH2TC75y9VdrYApkqRgIqpx4N5CshKPVILYb8pHtpM5TmvH25qlsPwXhLpfUfglvsU76cpp1UeqAQUM4Yv0kefKUhEBPPnoca12pw7ZiAA8Tm8Bs"/>
+</div>
+<div class="flex h-12 shrink-0 items-center justify-center px-4">
+<img alt="Logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh3rvGMwT5hWZA-zysaU0rgd2mDFLWVTjuAI-XQg9TwstpbX3iM3lTu4onkrmYw-W70zKGtPJUjHaRYhBa9vOQ6dodFvx9-Ezy84EtC2lozGiZNAgnxV2YeG1PXskJvSL-q3nTVkW4wjm9QGKtVh-rcD2Ms7I1yF9XEIHBsukwtrRe8zaKgvTm5YfuXmbKC0Iw_mYJAmhain1fUAoNpgTKEnEvAY6isKnThQVvUkVcOyEyO-TNG8JMFEzohTbznFN4IIKZRnc54Dw"/>
+</div>
+<div class="flex h-12 shrink-0 items-center justify-center px-4">
+<img alt="Logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs1xpIZ14z6B9Y7ZU_j7LSJYVS1btdkwmu2OFZa0fZ4UUQdbUT4SJ3PHATtjP418DFMGq_E5ZftDBaMN-e77buArRZTd8QoiCT_onD1GMcsI4s4ESGJnvmK0YmxKiP-lQef3-yNAl9viEH_wTmqpVeO48lToKxMqHe_kSShRNqjrQOpKu16RRgkwn239PzAlqfjg4aH4F_rA29XW_d9wsyFymuetKXXqqh-ssVgHXkcwykRvCNImKRsXhTy7WFHk2xDjstczwqnCo"/>
+</div>
+<div class="flex h-12 shrink-0 items-center justify-center px-4">
+<img alt="Logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1RSa4YxtDhEnUzq7YtPpoRY-CJkYdesECMzgxE7l5KJSEpRc3GjWBA7v2QUrdXoHRplHzNHAUrcYzKcJafwUdymme5CMlTJHQQgFa0x19aNkiKFRyDyjPUBrhKfv0tuIq-dUNl-2nhGqos6JfFF1_TL7jN3DuZPuFDYPyhvV_JoAtRAnlwg2K0emEqlXVGHJ4nhQJCjiGDGTG4OGG3NcL4q6fqrlEI44P3zz8aeffLLcAJV195ThIh1zXoylRNkK9L1BkxVwpe9g"/>
+</div>
+</div>
+</section>
+<!-- Why Us Grid -->
+<section class="py-16 px-6">
+<h2 class="text-2xl font-black mb-8 text-center">למה <span class="text-primary">דווקא אנחנו?</span></h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center">
+<div class="w-14 h-14 rounded-xl blue-gradient flex items-center justify-center mb-4 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-3xl">military_tech</span>
+</div>
+<h3 class="font-bold text-sm mb-2 leading-tight">ליווי אישי ליחידות עילית</h3>
+<p class="text-gray-500 text-[10px] leading-relaxed">הכנה פיזית ומנטלית המותאמת לדרישות הסיירת</p>
+</div>
+<div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center">
+<div class="w-14 h-14 rounded-xl gold-gradient flex items-center justify-center mb-4 shadow-lg shadow-accent-gold/20">
+<span class="material-symbols-outlined text-3xl text-white">menu_book</span>
+</div>
+<h3 class="font-bold text-sm mb-2 leading-tight">עומק תורני ורלוונטי</h3>
+<p class="text-gray-500 text-[10px] leading-relaxed">שיעורים המעצבים זהות יהודית גאה וחזקה</p>
+</div>
+<div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center">
+<div class="w-14 h-14 rounded-xl blue-gradient flex items-center justify-center mb-4 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-3xl">groups</span>
+</div>
+<h3 class="font-bold text-sm mb-2 leading-tight">קהילת בוגרים עוצמתית</h3>
+<p class="text-gray-500 text-[10px] leading-relaxed">רשת קשרים מקצועית וחברתית לכל החיים</p>
+</div>
+<div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center">
+<div class="w-14 h-14 rounded-xl gold-gradient flex items-center justify-center mb-4 shadow-lg shadow-accent-gold/20">
+<span class="material-symbols-outlined text-3xl text-white">psychology</span>
+</div>
+<h3 class="font-bold text-sm mb-2 leading-tight">פיתוח מנהיגות מעשי</h3>
+<p class="text-gray-500 text-[10px] leading-relaxed">כלים פיקודיים שמתחילים בשטח וממשיכים לחיים</p>
+</div>
+</div>
+</section>
+<!-- Program Slider -->
+<section class="py-16 overflow-hidden">
+<div class="px-6 mb-8 flex justify-between items-end">
+<div>
+<h2 class="text-2xl font-black leading-tight">המסלולים <span class="text-primary">שלנו</span></h2>
+<p class="text-gray-500 text-sm">בחרו את הדרך שמתאימה לכם</p>
+</div>
+<div class="flex gap-2">
+<div class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center opacity-50"><span class="material-symbols-outlined text-sm">arrow_forward_ios</span></div>
+<div class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center"><span class="material-symbols-outlined text-sm">arrow_back_ios_new</span></div>
+</div>
+</div>
+<div class="flex gap-4 overflow-x-auto px-6 hide-scrollbar pb-6">
+<!-- Program Card 1 -->
+<div class="min-w-[280px] h-[380px] relative rounded-3xl overflow-hidden group shadow-2xl">
+<div class="absolute inset-0 z-0 scale-105 group-hover:scale-110 transition-transform duration-700 bg-cover bg-center" data-alt="Tora study in a modern beit midrash" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRCz_Jbs4Co5ahIwwdhkkUOIdNQEuIZfvBbTPJ1ogqWHs2ahl_wjjKTBKY5R4VLazHxl71yNkLF3R4agPbdJW3Pnpt45k5eIvbJYiE8BtWLxsZb532T6Zhiof8SD_BtcnDgqhqFlXfa6AP7aE_sSwPEkPJA7Xh53GKsJU2uRpmy1_NIO9HvLQO0ZWDhTE9KAkKP9fLOaKFhRewWh3nuCkCNWnNrlLP3FaN87gVad2DiUkGIDTfCbUdK7riPMeGqa-geMHepzfS9CA');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
+<div class="absolute bottom-0 p-6 z-20 w-full">
+<span class="px-2 py-1 bg-primary rounded text-[10px] font-bold mb-3 inline-block">מכינה קדם צבאית</span>
+<h4 class="text-xl font-bold mb-2">מכינת 'עמיחי'</h4>
+<p class="text-gray-300 text-xs mb-4 line-clamp-2">הכנה אינטנסיבית של שנה לקראת שירות משמעותי ומנהיגות בחברה הישראלית.</p>
+<button class="w-full py-2 bg-white/10 backdrop-blur-md rounded-lg text-xs font-bold border border-white/20">פרטים נוספים</button>
+</div>
+</div>
+<!-- Program Card 2 -->
+<div class="min-w-[280px] h-[380px] relative rounded-3xl overflow-hidden group shadow-2xl">
+<div class="absolute inset-0 z-0 scale-105 group-hover:scale-110 transition-transform duration-700 bg-cover bg-center" data-alt="Soldier praying with tallit in the field" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDVAArwhq4ptq5xs4n0-DjQPRWrZlwCbg-9CJY4gkgpxlAQRddEh39EEg0e0NqOunn6q_JnHEkXjfzjpSnyitaqfiUzgnhUmn-JGfQA7YlP7CEAjv9tjAG64UR_TJBFdgZx8A-2GTT5wDIK3rXtdOcDC4Oqk8WhICu3H99cylKAVEVIJAHgTp23ycrj6Bey4Z7QmQwCjCVayONp0N5JcBMsI9gV-jXD_1c8jeZf49fYdu3Ftt5ik9eurO51YQl-WP2YGfAMKuvyCD0');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
+<div class="absolute bottom-0 p-6 z-20 w-full">
+<span class="px-2 py-1 bg-accent-gold text-black rounded text-[10px] font-bold mb-3 inline-block">מסלול הסדר</span>
+<h4 class="text-xl font-bold mb-2">ישיבת ההסדר 'לב'</h4>
+<p class="text-gray-300 text-xs mb-4 line-clamp-2">שילוב מושלם בין לימוד תורה מעמיק לשירות קרבי מאתגר ביחידות חיר.</p>
+<button class="w-full py-2 bg-white/10 backdrop-blur-md rounded-lg text-xs font-bold border border-white/20">פרטים נוספים</button>
+</div>
+</div>
+</div>
+</section>
+<!-- In Numbers Counter -->
+<section class="py-12 px-6">
+<div class="glass-card rounded-3xl p-8 grid grid-cols-2 gap-y-10 border-primary/20">
+<div class="text-center">
+<div class="text-3xl font-black text-primary mb-1">5,000+</div>
+<div class="text-gray-400 text-xs font-medium">בוגרים</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-black text-accent-gold mb-1">85%</div>
+<div class="text-gray-400 text-xs font-medium">קצונה ופיקוד</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-black text-primary mb-1">12</div>
+<div class="text-gray-400 text-xs font-medium">שנות פעילות</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-black text-accent-gold mb-1">45+</div>
+<div class="text-gray-400 text-xs font-medium">מוסדות שותפים</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-16 px-6 relative overflow-hidden">
+<h2 class="text-2xl font-black mb-12 text-center">מה אומרים <span class="text-primary">עלינו</span></h2>
+<div class="space-y-6">
+<!-- Testimonial 1 -->
+<div class="glass-card p-5 rounded-2xl relative translate-x-4">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-12 h-12 rounded-full border-2 border-primary overflow-hidden" data-alt="Portrait of an IDF officer">
+<img alt="Alumni" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn63GZHE-J0iSZK8bwGUzphyVXiA7URY7LAv2xjEkaXzEAcsS5Ou4Uo2shHhrd5ngtIeTsc-oUFkdY8qQKrIem6G0l8v4k7kjR4UyRcqI8vU-TqGCMpeDSDQpZn9DiO_RUpvYL_-qRfkpM61wtD9EV57_TSNxxGgj8K_ZbyupLw9kE01OTgrOqKgZBX_5dr1p2phxQp5KzoGC5WCWY1DrQSj9E_lORFhX3Bk5CUI5AA6rdTzNGZdlRovZCZfk9YGuVsmeHGw9x-zo"/>
+</div>
+<div>
+<div class="font-bold text-sm">רס"ן איתי מ.</div>
+<div class="text-[10px] text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">verified</span> בוגר מחזור י"א
+                            </div>
+</div>
+</div>
+<p class="text-gray-300 text-xs leading-relaxed italic">"המקום הזה לא רק הכין אותי לגיבוש מטכ"ל, הוא בנה לי את עמוד השדרה המוסרי והדתי שמלווה אותי בכל החלטה פיקודית בשטח."</p>
+</div>
+<!-- Testimonial 2 -->
+<div class="glass-card p-5 rounded-2xl relative -translate-x-4 border-accent-gold/20">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-12 h-12 rounded-full border-2 border-accent-gold overflow-hidden" data-alt="Portrait of a smiling young student">
+<img alt="Alumni" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlH6fWI1QkAY74YZOZzFDnQisyXbDqnZLasp55kVkz7_E0qpdojxrNkRhvl1eUup2fienWeA9JwEOG3N3-VTTMVJFR3G8CjpgbpKrJf6DnIVCemJZOFjjhj6XQtIviyM3u3xRGS4CP_J1DPwPhRgvoZiDDcX5ZOXJrVWWiAOlSMS8Tzdr-jY9KFwRKJeNe1F9PJMBFA4waum6jG56hYRsE_hzPRWWs7_ruE0rxwNJLAYfHBrl3k6gr48NpONwGINxG7ujZ4nz-gNk"/>
+</div>
+<div>
+<div class="font-bold text-sm">יהונתן כ.</div>
+<div class="text-[10px] text-accent-gold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">school</span> סטודנט ובוגר שייטת 13
+                            </div>
+</div>
+</div>
+<p class="text-gray-300 text-xs leading-relaxed italic">"בזכות הכלים שקיבלתי במכינה, הצלחתי לשלב בין שירות תובעני ביחידה מובחרת לבין שמירה על קביעת עיתים לתורה וערכים."</p>
+</div>
+</div>
+</section>
+<!-- Footer Contact Info -->
+<footer class="pt-12 pb-32 px-6 border-t border-white/5">
+<div class="flex flex-col items-center text-center">
+<h2 class="text-xl font-black mb-2">PREMIUM <span class="text-primary">LANDING</span></h2>
+<p class="text-gray-500 text-xs mb-8">הבית למצוינות תורנית וצבאית</p>
+<div class="flex gap-4 mb-8">
+<div class="w-10 h-10 rounded-full glass-card flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">share</span>
+</div>
+<div class="w-10 h-10 rounded-full glass-card flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">mail</span>
+</div>
+<div class="w-10 h-10 rounded-full glass-card flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">phone</span>
+</div>
+</div>
+<div class="text-[10px] text-gray-600 space-y-1">
+<p>© 2024 כל הזכויות שמורות - פרימיום לנדינג</p>
+<p>מדיניות פרטיות | תנאי שימוש</p>
+</div>
+</div>
+</footer>
+</main>
+<!-- Sticky Footer CTA -->
+<div class="fixed bottom-0 left-0 right-0 z-[60] p-4 bg-background-dark/95 backdrop-blur-xl border-t border-white/10 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
+<div class="max-w-lg mx-auto flex items-center justify-between gap-4">
+<div class="flex flex-col">
+<span class="text-[10px] text-primary font-bold uppercase tracking-wider">אל תחכו למחר</span>
+<span class="text-sm font-bold">הבטיחו את מקומכם</span>
+</div>
+<button class="px-8 py-3 rounded-xl gold-gradient text-background-dark font-black text-sm shadow-lg shadow-accent-gold/20 flex items-center gap-2">
+<span>הרשמה עכשיו</span>
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</body></html>

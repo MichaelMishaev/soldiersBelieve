@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "gold-accent": "#D4AF37",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Newsreader', serif;
+        }
+        .pull-quote-border {
+            border-right: 4px solid #D4AF37;
+        }
+        .article-gradient {
+            background: linear-gradient(to bottom, transparent 0%, #101922 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<!-- Top Navigation Bar -->
+<nav class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center p-4 justify-between max-w-xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-400">arrow_forward</span>
+</div>
+<h2 class="text-sm font-bold tracking-tight uppercase opacity-70">מאמר מחקר</h2>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-400">bookmark</span>
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-400">text_fields</span>
+</div>
+</div>
+<!-- Reading Progress Indicator -->
+<div class="h-1 bg-primary/20 w-full">
+<div class="h-full bg-primary w-1/3"></div>
+</div>
+</nav>
+<main class="max-w-xl mx-auto pb-32">
+<!-- Hero Section -->
+<div class="relative h-[40vh] w-full overflow-hidden">
+<div class="absolute inset-0 bg-center bg-cover" data-alt="Modern Israeli cityscape at sunset with soft lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBKHe1OZSH0B-KKSGzWrPSjtLlRw_LF8LaWatJIAwAJG7DDQHtFxjv8cxVnuIUvWVX2VWl4RstspnRBd1iCp3ulD2zll4rG4Xs-Sm3mElOTCnAnqPWsU7IZ2_K0_E16VCfAfHAu1Vr55-6AOD70o76vLwwdt7E189boSGAVyo63wJcVOYJolK70N0RnDFDAhFV_v-XLiEt6odIHnaHGQb65Mmm9cn3KG9thD0E-KsZBj9BKi903rxDl8sh6UWm8Gwh0_9ZISy5XAj4');">
+</div>
+<div class="absolute inset-0 article-gradient"></div>
+</div>
+<!-- Headline & Author Section -->
+<div class="px-4 -mt-12 relative z-10">
+<h1 class="text-4xl font-bold leading-[1.15] mb-6 tracking-tight text-slate-900 dark:text-white">
+                השפעת החברה האזרחית על עתיד המדינה: מבט אקדמי
+            </h1>
+<div class="flex items-center gap-3 py-4 border-y border-slate-200 dark:border-slate-800">
+<div class="size-12 rounded-full bg-center bg-cover border-2 border-primary/20" data-alt="Professional portrait of Dr. Arnon Levi" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAexvCkePM3jg5Rrf1R9NODpxB__DOl2B5KwZCmEEkNzc8QqxcTYbDXu2-T-P8eBu6QznQMUyCwUn0jK6H7P2WKujTBfJkkdGjgQ82guOPSLiJc05E6xPvAqzRpMnWBO9K4xCxZCy2amjM2HOYjEsBATzJBVDfVA7rL_tP1yLgSwrTVndtW0PtP6dnQQJX8vewU0W782Gn_JMxz6Q0I-JOvJSEbH_DmeWgA7FsPlobjWpYeGa4tAaCViaBfbKJOlnPCdCh_H9XCWU0');">
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-primary">ד"ר ארנון לוי</span>
+<span class="text-sm text-slate-500 dark:text-slate-400">12 באוקטובר 2023 • 8 דקות קריאה</span>
+</div>
+</div>
+</div>
+<!-- Article Content -->
+<article class="px-4 py-8 space-y-6 text-lg leading-relaxed text-slate-800 dark:text-slate-200">
+<p>
+                החברה האזרחית בישראל מהווה את אחד מעמודי התווך המרכזיים של הדמוקרטיה המקומית. בשנים האחרונות אנו עדים לשינוי משמעותי במבנה הפעילות של עמותות וארגונים ללא מטרת רווח, אשר עוברים תהליך של התמקצעות ודיגיטציה.
+            </p>
+<p>
+                המחקר המעמיק שנערך במכון למדיניות ציבורית חושף כי השפעת המגזר השלישי אינה מצטמצמת רק לסיוע הומניטרי, אלא מהווה כוח מניע בשינויי חקיקה ועיצוב סדר יום חברתי-כלכלי.
+            </p>
+<!-- Stylized Pull Quote -->
+<div class="my-10 p-6 bg-primary/5 dark:bg-primary/10 rounded-xl pull-quote-border relative">
+<span class="material-symbols-outlined absolute -top-4 right-4 text-gold-accent text-4xl opacity-50">format_quote</span>
+<p class="text-xl font-medium italic text-slate-900 dark:text-white leading-snug">
+                    "עתידה של ישראל תלוי ביכולתנו לבנות גשרים בין המגזרים השונים, כאשר החברה האזרחית משמשת כמלט המחבר ביניהם."
+                </p>
+</div>
+<p>
+                תהליכי העומק המתרחשים כיום דורשים מאיתנו חשיבה מחודשת על יחסי הגומלין בין המדינה לאזרח. האם המודל הנוכחי מספק את המענה הנדרש לאתגרי המאה ה-21? נראה כי התשובה טמונה בשיתופי פעולה רב-מגזריים.
+            </p>
+<p>
+                לא ניתן להתעלם מהעלייה במעורבות של דור ה-Z בפעילות חברתית דיגיטלית. בניגוד לדורות קודמים, פעילות זו אינה דורשת נוכחות פיזית אלא מתבססת על רשתות השפעה רחבות.
+            </p>
+</article>
+<!-- Related Articles Section -->
+<section class="px-4 pt-12 mt-8 border-t border-slate-200 dark:border-slate-800">
+<h3 class="text-xl font-bold mb-6">מאמרים נוספים שעשויים לעניין אותך</h3>
+<div class="grid grid-cols-1 gap-4">
+<!-- Related Card 1 -->
+<div class="flex gap-4 p-3 rounded-xl bg-slate-100 dark:bg-slate-800/50 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors group">
+<div class="w-24 h-24 shrink-0 rounded-lg bg-center bg-cover" data-alt="Abstract representation of social justice and equality" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCHDFAOJ8k1xaivruNcJ8XaOHoY9mPwB6Rks-a9OziGHuxhg1AjhFLxJ7-P03lCabKB1kg7YWWLjzyJ3rxhjTyxkGk8E1gEFuF_gRQXOJh5KRj7_m-7A-X1xGA5RAp09cAnDLyzYd_SgRZaa8pdWca7k1RTxddmNOX6dOuf5ZFlhrK4ceyxW3dtBqpFI5IF-dHAoDygP4ymWLb8-C_VHJsP6Pd0dFA7zL6988Ul1UG34n-7gR-JPZtSiQiuD7MkuM_SCSnJTKkPHGU');">
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="font-bold leading-tight group-hover:text-primary transition-colors">צדק חברתי בשנת 2024: לאן פנינו מועדות?</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-2">מאת פרופ׳ שרה כהן</p>
+</div>
+</div>
+<!-- Related Card 2 -->
+<div class="flex gap-4 p-3 rounded-xl bg-slate-100 dark:bg-slate-800/50 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors group">
+<div class="w-24 h-24 shrink-0 rounded-lg bg-center bg-cover" data-alt="A meeting of non-profit leaders discussing strategy" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCtAf9-4-ne0IHwFg5ykLme2b0rzdNvy8Z2QmuuzWLapnDU7vg3PAwAULexJOb8IDQov111y8pdwG933VfAfpAowOXetG6lDQcSn4IFNQBAeEVz4z-6YBZpMZawzd2PGP5rpNU29TPDgBXKsBSV3vWxfoVcr9-t5rVeWN2EbrXdV54Tr7hj8bqP15OV0_3q_LCR9hd3kFiH25pVjOhrydnT19Jc1Supth_LWsRrSWXs1vjBB_XPhjLsJ_rxegAoE89sTIilibmMXjE');">
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="font-bold leading-tight group-hover:text-primary transition-colors">תפקיד העמותות בעיצוב מדיניות הרווחה</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-2">מאת עו״ד מיכאל לוי</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Social Share Bar -->
+<div class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
+<div class="flex items-center gap-6 bg-white dark:bg-slate-800 px-8 py-4 rounded-full shadow-2xl border border-slate-200 dark:border-slate-700">
+<button class="flex items-center gap-2 hover:text-green-500 transition-colors">
+<span class="material-symbols-outlined">forum</span>
+<span class="text-xs font-bold">WhatsApp</span>
+</button>
+<div class="w-px h-6 bg-slate-300 dark:bg-slate-600"></div>
+<button class="flex items-center gap-2 hover:text-blue-500 transition-colors">
+<span class="material-symbols-outlined">share</span>
+<span class="text-xs font-bold">Facebook</span>
+</button>
+<div class="w-px h-6 bg-slate-300 dark:bg-slate-600"></div>
+<button class="flex items-center gap-2 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">link</span>
+<span class="text-xs font-bold">העתק</span>
+</button>
+</div>
+</div>
+</body></html>

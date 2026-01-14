@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="light" dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>צור קשר - המרה גבוהה</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "accent": "#0ea5e9",
+                        "background-light": "#ffffff",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        "sans": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply font-sans antialiased;
+            }
+        }
+        .bg-pattern {
+            background-color: #ffffff;
+            background-image:  radial-gradient(#137fec15 0.5px, transparent 0.5px), radial-gradient(#137fec15 0.5px, #ffffff 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+        .dark .bg-pattern {
+            background-color: #0f172a;
+            background-image:  radial-gradient(#ffffff08 0.5px, transparent 0.5px), radial-gradient(#ffffff08 0.5px, #0f172a 0.5px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-slate-50 dark:bg-slate-950 min-h-screen">
+<div class="relative flex h-full min-h-screen w-full max-w-[430px] mx-auto flex-col bg-pattern shadow-2xl overflow-hidden border-x border-slate-100 dark:border-slate-800">
+<div class="relative h-56 w-full overflow-hidden">
+<img alt="Support representative" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1ZRmif_UguNlsF797oP9L9JD5RD51Mc9H_kjd-x8RbVwLIPJmw4LexgTQJ8VrrAqygSdq7tLNn-ZXLQrOYyDedIlv3vOg2ctIzH3getJvN4yoIrP1Yd_g0vSGL_mXwMQ-L79PpOnrNFrn43ed-K-UJbz_G8ZVc_D1oxk9XUdZTDfbeGm2rer64j3nK9YYIa7JLfr91beafguZrhXOPd54U6w8K6PgTzrwzWsuvYxFX9KfwLkGUkEWwYquVSNq3zR4QoeN3wYd4q8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent dark:from-background-dark dark:via-background-dark/40"></div>
+<div class="absolute top-0 left-0 right-0 p-4 flex items-center justify-between">
+<button class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md size-10 rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-slate-800 dark:text-white">arrow_forward_ios</span>
+</button>
+<div class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-bold text-primary shadow-sm">
+                    מענה מהיר
+                </div>
+</div>
+</div>
+<div class="px-6 -mt-12 relative z-10 pb-8">
+<div class="mb-8">
+<h1 class="text-[#111827] dark:text-white text-3xl font-extrabold leading-tight text-right mb-2">צרו איתנו קשר</h1>
+<p class="text-slate-600 dark:text-slate-400 text-base font-medium leading-relaxed text-right">
+                    אנחנו כאן כדי לעזור לך לעשות את הצעד הנכון בשירות המשמעותי שלך.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<a class="flex flex-col items-center justify-center bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 active:scale-95 transition-transform" href="tel:031234567">
+<div class="bg-blue-50 dark:bg-blue-900/30 p-2 rounded-full mb-2">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<span class="text-slate-900 dark:text-white font-bold text-sm">שיחה ישירה</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 active:scale-95 transition-transform" href="https://wa.me/972500000000">
+<div class="bg-green-50 dark:bg-green-900/30 p-2 rounded-full mb-2">
+<span class="material-symbols-outlined text-green-600">chat</span>
+</div>
+<span class="text-slate-900 dark:text-white font-bold text-sm">WhatsApp</span>
+</a>
+</div>
+<form class="space-y-5">
+<div class="relative group">
+<label class="block text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-1 mr-1">שם מלא</label>
+<input class="w-full h-14 px-4 bg-white dark:bg-slate-900 border-none ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl focus:ring-2 focus:ring-primary focus:bg-white dark:focus:bg-slate-900 transition-all text-slate-900 dark:text-white placeholder:text-slate-300 dark:placeholder:text-slate-600" placeholder="ישראל ישראלי" type="text"/>
+</div>
+<div class="relative group">
+<label class="block text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-1 mr-1">מספר טלפון</label>
+<input class="w-full h-14 px-4 bg-white dark:bg-slate-900 border-none ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl focus:ring-2 focus:ring-primary transition-all text-slate-900 dark:text-white placeholder:text-slate-300 dark:placeholder:text-slate-600" placeholder="050-0000000" type="tel"/>
+</div>
+<div class="relative group">
+<label class="block text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-1 mr-1">במה אפשר לעזור?</label>
+<textarea class="w-full min-h-[120px] p-4 bg-white dark:bg-slate-900 border-none ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl focus:ring-2 focus:ring-primary transition-all text-slate-900 dark:text-white placeholder:text-slate-300 dark:placeholder:text-slate-600 resize-none" placeholder="ספרו לנו קצת על השאלה שלכם..."></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full h-16 bg-primary hover:bg-blue-600 text-white rounded-2xl font-extrabold text-xl shadow-xl shadow-blue-500/30 flex items-center justify-center gap-3 active:scale-[0.98] transition-all" type="submit">
+                        שליחת פרטים
+                        <span class="material-symbols-outlined font-bold">arrow_back</span>
+</button>
+<div class="mt-4 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-green-500 text-[20px] fill-1">verified</span>
+<p class="text-sm font-semibold text-slate-500 dark:text-slate-400">התחייבות למענה תוך 24 שעות</p>
+</div>
+</div>
+</form>
+</div>
+<footer class="mt-auto border-t border-slate-100 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm py-8 px-6">
+<div class="flex flex-col items-center">
+<div class="flex gap-8 mb-6">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">language</span>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+</div>
+<div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6">
+<a class="text-xs font-bold text-slate-500 hover:text-primary" href="#">שאלות נפוצות</a>
+<a class="text-xs font-bold text-slate-500 hover:text-primary" href="#">מדיניות פרטיות</a>
+<a class="text-xs font-bold text-slate-500 hover:text-primary" href="#">עלינו</a>
+</div>
+<p class="text-[10px] text-slate-400 text-center font-medium leading-relaxed">
+                    © 2024 עמותת צבא וקדושה. כל הזכויות שמורות.<br/>
+                    אנחנו כאן למען הגיוס החרדי והדתי המקצועי.
+                </p>
+</div>
+</footer>
+</div>
+
+</body></html>

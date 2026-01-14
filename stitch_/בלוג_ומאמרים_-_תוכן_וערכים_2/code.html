@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Newsreader', serif;
+        }
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            background-color: rgba(16, 25, 34, 0.8);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen text-slate-900 dark:text-white font-display">
+<!-- Sticky Top App Bar -->
+<header class="sticky top-0 z-50 glass-effect border-b border-white/10">
+<div class="flex items-center p-4 justify-between max-w-md mx-auto">
+<div class="flex size-12 items-center justify-start">
+<span class="material-symbols-outlined text-white">menu</span>
+</div>
+<h1 class="text-white text-xl font-bold leading-tight tracking-tight flex-1 text-center">בלוג ומאמרים</h1>
+<div class="flex size-12 items-center justify-end">
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-white/10 text-white">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-md mx-auto pb-24">
+<!-- Featured Article Card -->
+<section class="p-4">
+<div class="relative overflow-hidden rounded-xl bg-cover bg-center h-[340px] flex flex-col justify-end shadow-2xl" data-alt="Modern soldier studying ancient Torah scrolls in library" style='background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDoTmDwvdN6VDjVhJtuDOhOAQB8Tv5MFjObqFeao2JkneCNPTBH0askNdOgFbfQmzkg2Bw3nPET-3npx4TQ0nE0xYhbcF3PlgiG15Jaeu25V7qmjCd1Yh-m-UhQuUb_h9AvceXpEN9c_rFOHuhPuKIgb4fZdnzAddvU_8e8DH_kcGfBa2rTQzR4K0M43Nnou6-Yxhn5xI8PTBP5P20MyGH_sFOGogZwAhLrtnDFFUdvVaZNPyQDX2g6RzOy57aSMxeGq6b4A22qK0Q");'>
+<div class="p-6 space-y-3">
+<span class="inline-block px-3 py-1 rounded-full bg-primary text-white text-xs font-bold uppercase tracking-wider">כתבה נבחרת</span>
+<h2 class="text-white text-3xl font-bold leading-tight">תורה ושירות: הסינתזה המודרנית</h2>
+<p class="text-gray-200 text-lg">מנהיגות רוחנית וערכית בשירות משמעותי בחזית</p>
+<div class="flex items-center justify-between pt-2">
+<button class="flex items-center justify-center rounded-full h-12 px-8 bg-primary text-white text-base font-bold transition-transform active:scale-95 shadow-lg shadow-primary/30">
+                            קרא עוד
+                        </button>
+<span class="text-gray-300 text-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+                            8 דק׳ קריאה
+                        </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Selection -->
+<nav class="flex gap-3 px-4 py-2 overflow-x-auto no-scrollbar">
+<div class="flex h-10 shrink-0 items-center justify-center rounded-full bg-primary px-6 shadow-md shadow-primary/20">
+<p class="text-white text-sm font-bold">הכל</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center rounded-full bg-white/5 border border-white/10 px-5">
+<p class="text-white text-sm font-medium">הלכה</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center rounded-full bg-white/5 border border-white/10 px-5">
+<p class="text-white text-sm font-medium">סיפורים מהשטח</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center rounded-full bg-white/5 border border-white/10 px-5">
+<p class="text-white text-sm font-medium">טיפים למתגייס</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center rounded-full bg-white/5 border border-white/10 px-5">
+<p class="text-white text-sm font-medium">השראה</p>
+</div>
+</nav>
+<!-- Article List -->
+<section class="mt-4">
+<div class="flex items-center justify-between px-4 mb-2">
+<h3 class="text-white text-xl font-bold">מאמרים אחרונים</h3>
+<span class="text-primary text-sm font-medium">ראה הכל</span>
+</div>
+<div class="space-y-1">
+<!-- List Item 1 -->
+<article class="flex items-center gap-4 bg-white/5 hover:bg-white/10 transition-colors mx-4 rounded-xl p-3 border border-white/5 group">
+<div class="flex flex-col flex-1 gap-1">
+<p class="text-white text-lg font-bold leading-snug group-hover:text-primary transition-colors">חובת השעה: שמירה על רוח ההתנדבות</p>
+<p class="text-gray-400 text-sm font-normal line-clamp-2">י׳ בכסלו תשפ״ד • המאמר עוסק בשילוב שבין ערכי התורה לחיי היום יום בצבא.</p>
+<div class="flex items-center gap-3 mt-1">
+<span class="text-gray-500 text-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">timer</span>
+                                3 דק׳
+                            </span>
+<span class="text-gray-500 text-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">visibility</span>
+                                1.2k
+                            </span>
+</div>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-24 shrink-0 shadow-inner" data-alt="Mountain landscape at sunrise with golden light" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB0rfa_xYezn8JTF7V8S-60i60GTV7FetMUWI4IQwvRuMe0FF1Xc0fTdhfS4Yhsc71Gb9V-nr6hI_P1MjzeWGzI8k8mih8BwQngcUASS0aAxaiEb12J0NkB0gkbGPoCHRVE1vA9dpmQNofPhZ1eBhEUSjvtX_UWEOi5PsLrCG8fzXmsRjIGqZClnppTDbQf9NjzqfhyecyoDBRZ3TziEbJSKaA_-FU_cGPhxJzuVtTBHMyKnvZwXtqXoG8gRmBiyB6yt5Pu6ytHw8g");'></div>
+</article>
+<!-- List Item 2 -->
+<article class="flex items-center gap-4 bg-white/5 hover:bg-white/10 transition-colors mx-4 rounded-xl p-3 border border-white/5 group">
+<div class="flex flex-col flex-1 gap-1">
+<p class="text-white text-lg font-bold leading-snug group-hover:text-primary transition-colors">גבורה יהודית במבחן המציאות</p>
+<p class="text-gray-400 text-sm font-normal line-clamp-2">ח׳ בכסלו תשפ״ד • ניתוח מעמיק של דמויות המופת בהיסטוריה היהודית.</p>
+<div class="flex items-center gap-3 mt-1">
+<span class="text-gray-500 text-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">timer</span>
+                                5 דק׳
+                            </span>
+<span class="text-gray-500 text-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">visibility</span>
+                                840
+                            </span>
+</div>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-24 shrink-0 shadow-inner" data-alt="Ancient architectural details in Jerusalem" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCLcommBacpLg0_OOPuI4G34GeXZlQKUmE95MDJOFOSVlVUKXnEP05EV2x3wwE_1OfohKD1Jc_uY47eJYfJGExkhjl5giBbFv27knOx8-vxDSaOA9X-5LxyNOmNZvZtGw18_9cq0oboPED8TO33OXBy3UjeFPhFcsWEovbHhwfVoxvlbFQ3hH2aY6aPTMUNTwwCTwmaRvutqbe3bEutIIT2R5VJgrqQJK1y9BLeahpD2uzYy39bNKdsAlL6PTXfknSdCd8cNPuSvr8");'></div>
+</article>
+<!-- List Item 3 -->
+<article class="flex items-center gap-4 bg-white/5 hover:bg-white/10 transition-colors mx-4 rounded-xl p-3 border border-white/5 group">
+<div class="flex flex-col flex-1 gap-1">
+<p class="text-white text-lg font-bold leading-snug group-hover:text-primary transition-colors">הכנה מנטלית לשבת בשטח</p>
+<p class="text-gray-400 text-sm font-normal line-clamp-2">הלכות ומנהגים עבור הלוחם הדתי בשירות פעיל.</p>
+<div class="flex items-center gap-3 mt-1">
+<span class="text-gray-500 text-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">timer</span>
+                                4 דק׳
+                            </span>
+<span class="text-gray-500 text-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">visibility</span>
+                                2.1k
+                            </span>
+</div>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-24 shrink-0 shadow-inner" data-alt="Tefillin and prayer books close up" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCTeDmfYw0n4j1wBcUPo7kh7Xds5s4w48mly_3IwmNyvzY7bkMm2B96G0ThxbRf5fr3pyxhl54COxTsmkznyPnV_CmJXvquGgNGLKV2rOuPMWk7fVhui-9TgayCZeF8QxzVP4yU8GNzXPyqBiCjILUjQW-_FtntW_OHiReOaJiUYO8Ghu-7WyiyVDWLG-1v1ATvpN5J6ehngwLTr10xL5j3w2MNFOJGUZOsLH4543zf4AkrAaGiiZp7IcOQ191JqiYgKM81KNuPyzA");'></div>
+</article>
+</div>
+</section>
+<!-- Newsletter Signup -->
+<section class="p-4 mt-6">
+<div class="bg-gradient-to-br from-slate-800 to-black rounded-xl p-6 border border-primary/20 shadow-xl relative overflow-hidden">
+<div class="absolute -top-12 -right-12 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="relative z-10">
+<h3 class="text-white text-2xl font-bold mb-2">הצטרפו לקהילה שלנו</h3>
+<p class="text-gray-400 text-sm mb-6">קבלו את כל התכנים הכי חמים ומשמעותיים ישירות למייל שלכם.</p>
+<div class="flex flex-col gap-3">
+<div class="relative">
+<input class="w-full h-12 bg-white/5 border border-white/10 rounded-full px-6 text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-all" placeholder="כתובת אימייל" type="email"/>
+</div>
+<button class="w-full h-12 bg-primary text-white font-bold rounded-full shadow-lg shadow-primary/25 active:scale-[0.98] transition-all">
+                            הרשמה עכשיו
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Search Bar (Glassmorphism Sticky) -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-sm z-50">
+<div class="glass-effect border border-white/20 rounded-full px-4 py-2 flex items-center gap-3 shadow-2xl">
+<span class="material-symbols-outlined text-primary">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-white placeholder-gray-400 w-full text-sm" placeholder="חיפוש מאמרים..." type="text"/>
+<div class="flex items-center gap-2">
+<div class="w-[1px] h-6 bg-white/20"></div>
+<button class="text-gray-400 hover:text-white transition-colors">
+<span class="material-symbols-outlined">tune</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

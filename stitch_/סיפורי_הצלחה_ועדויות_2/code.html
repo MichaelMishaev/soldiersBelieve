@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Public Sans", "Noto Sans Hebrew", sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-white font-display">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-50 bg-background-dark/95 backdrop-blur-md border-b border-white/10">
+<div class="flex items-center p-4 justify-between max-w-lg mx-auto">
+<div class="flex size-12 items-center justify-start">
+<span class="material-symbols-outlined text-white">arrow_forward</span>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">סיפורי הצלחה ועדויות</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex cursor-pointer items-center justify-center rounded-lg h-12 bg-transparent text-white p-0">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</div>
+</div>
+<main class="max-w-lg mx-auto pb-24">
+<!-- Featured Media Player -->
+<div class="relative w-full aspect-video bg-black overflow-hidden shadow-2xl">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Soldier standing in uniform looking at sunset" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC-KTmsy13y9TYfRsA7OHKKEwy7slmCEG4sb50l0HVBlBb7KjVc0J1nMN0K9rsX7_oiNilR0xQHLM0enOA-qB8SAeTR9tOwJPqOWwf5X6MX-8soRCydvQ2ZxDUX6-k_C9Bwu2aCIDe4HaEfVwZcBCbua1uC2IVsdVdcOjXlOs3IREcwxTA_YkNDHT8qPdoDl8rCA8xhXiooUh0aYJv-VSxogjnCNR9SpVV67Zc7Fr5MdE6NiAts6lrG87M7Od-Ke92HqOxwKG7KtpU");'>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+</div>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<button class="flex shrink-0 items-center justify-center rounded-full size-16 bg-primary text-white shadow-lg shadow-primary/40 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-4xl">play_arrow</span>
+</button>
+</div>
+<div class="absolute inset-x-0 bottom-0 px-6 py-6">
+<div class="mb-3">
+<span class="bg-primary/90 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">סיפור נבחר</span>
+<h1 class="text-xl font-bold mt-1">מלוחם בשלדג להייטק: הסיפור של יובל</h1>
+</div>
+<div class="flex h-1.5 items-center justify-center gap-1">
+<div class="h-1 flex-[0.4] rounded-full bg-primary"></div>
+<div class="relative"><div class="size-3 rounded-full bg-primary ring-4 ring-primary/20"></div></div>
+<div class="h-1 flex-1 rounded-full bg-white/30"></div>
+</div>
+<div class="flex items-center justify-between mt-2">
+<p class="text-white/80 text-xs font-medium">1:24</p>
+<p class="text-white/80 text-xs font-medium">4:15</p>
+</div>
+</div>
+</div>
+<!-- Filter Chips -->
+<div class="flex gap-3 p-4 overflow-x-auto no-scrollbar scroll-smooth">
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-primary px-5 shadow-lg shadow-primary/20">
+<p class="text-white text-sm font-semibold">הכל</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#1c2127] border border-white/5 px-5">
+<p class="text-[#9dabb9] text-sm font-medium">לוחמה</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#1c2127] border border-white/5 px-5">
+<p class="text-[#9dabb9] text-sm font-medium">טכנולוגיה</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#1c2127] border border-white/5 px-5">
+<p class="text-[#9dabb9] text-sm font-medium">מכינות</p>
+</div>
+</div>
+<div class="px-4">
+<h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] pb-4 pt-2">סיפורי הבוגרים שלנו</h3>
+</div>
+<!-- Video Cards List -->
+<div class="flex flex-col gap-4 px-4">
+<!-- Card 1 -->
+<div class="@container">
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-lg bg-[#1c2127] overflow-hidden border border-white/5">
+<div class="relative w-full aspect-video bg-cover bg-center" data-alt="Smiling female officer in military base" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvEidWg5jMRkowcX3ddkI_qGnq3EkY0QpwGt2u9AiyIXlEFTTYWCxMvQzCeSvWq7265DxIXARItIn9FSQcGWIvxopdKF5QgvOHgD-vN4g-yoiwj31N0L62XQavydSMI_PYSUXdBaGS9uZgq9jKJMNETH3vLaba1Gl9HMD0Bs0VkK7zwvPkznnYbih7bAQWVKLG0QMtNA8GSr1Et2oRekwL4hvmPG8Lz8X8a36HrRk0rHeYQevaEEcq6-DXYM1Sj12X5O55SMPTaU8");'>
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="absolute top-3 left-3 bg-black/60 backdrop-blur-md rounded-lg p-1.5 border border-white/10">
+<div class="size-8 rounded-full bg-white/10 flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-primary text-xl">security</span>
+</div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="size-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-white">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="flex w-full flex-col items-stretch justify-center gap-2 p-4">
+<p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">עדי ל., יחידת מודיעין 8200</p>
+<div class="flex flex-col gap-4">
+<p class="text-[#9dabb9] text-base font-normal leading-relaxed italic">"הליווי הצמוד של העמותה נתן לי ביטחון לעשות את הצעד הראשון בעולם היזמות."</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 text-[#9dabb9] text-xs">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>3:45 דקות</span>
+</div>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-bold shadow-md shadow-primary/20">
+<span class="truncate">לצפייה</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="@container">
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-lg bg-[#1c2127] overflow-hidden border border-white/5">
+<div class="relative w-full aspect-video bg-cover bg-center" data-alt="Soldier in combat gear during training" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB9wf1Q0PVH4NwwswfOdGW3Xi373UoqKAuZzMJdNKE2cHI102j_cV3Omsom6_sjZr0HswcoO6VHgNoo5YEwQvNT6o86JQmlXgYmZYqt6atwhaQVqH-qVPlvnj8zLJnQNUSHkt9lJOURGOD8feJPwUrzWOfYvIaKSEO_aV86158uEQXe-cokC_SAMmDsz5qF_8BGBHZK5gB-cK5YgZvblnQp-FwR6Qd7efSBbfLMgs_FTMM7VQSDI0adqmmYHGpYRDBAn_I9Tov_lDc");'>
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="absolute top-3 left-3 bg-black/60 backdrop-blur-md rounded-lg p-1.5 border border-white/10">
+<div class="size-8 rounded-full bg-white/10 flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-primary text-xl">military_tech</span>
+</div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="size-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-white">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="flex w-full flex-col items-stretch justify-center gap-2 p-4">
+<p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">רועי מ., חטיבת גולני</p>
+<div class="flex flex-col gap-4">
+<p class="text-[#9dabb9] text-base font-normal leading-relaxed italic">"המעבר מהשטח למשרד היה מאתגר, אבל בזכות המנטור שלי מצאתי את הדרך שלי."</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 text-[#9dabb9] text-xs">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>5:12 דקות</span>
+</div>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-bold shadow-md shadow-primary/20">
+<span class="truncate">לצפייה</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="@container">
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-lg bg-[#1c2127] overflow-hidden border border-white/5">
+<div class="relative w-full aspect-video bg-cover bg-center" data-alt="Students in a technology classroom setting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZrvPygT-IlBSm3DBJphi5V86H7zUfWdy2nuVcxnR6BOTwG_7ZSbKNQDMrvWhi-7tO5-aZezMpCy6qsnJjSBf1H813uEOs9xuQlnmvF3aJSdobfKbpLQNI4zKc19QAkDRmexREX_UdnSkMPHN4uf9rUlXTbN2-ACSEjF2-65Q4iph3EpRGBdAgaXr9_G70jY-u4wmWOw2P6b0SRONaROwKN0XdXWdqR5QlaUT7VsL4Ea57_lLsJVpEIGlcqOAn7_jRRRpLqXhjpCM");'>
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="absolute top-3 left-3 bg-black/60 backdrop-blur-md rounded-lg p-1.5 border border-white/10">
+<div class="size-8 rounded-full bg-white/10 flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-primary text-xl">school</span>
+</div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="size-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-white">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="flex w-full flex-col items-stretch justify-center gap-2 p-4">
+<p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">מיכל א., מכינה קדם צבאית</p>
+<div class="flex flex-col gap-4">
+<p class="text-[#9dabb9] text-base font-normal leading-relaxed italic">"במכינה למדתי מה זה אומר להיות מנהיגה. זה עיצב את כל השירות שלי."</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 text-[#9dabb9] text-xs">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>2:50 דקות</span>
+</div>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-bold shadow-md shadow-primary/20">
+<span class="truncate">לצפייה</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Navigation Tab Bar (iOS style) -->
+<div class="fixed bottom-0 inset-x-0 bg-background-dark/80 backdrop-blur-xl border-t border-white/10 px-6 py-3 pb-8">
+<div class="flex items-center justify-between max-w-lg mx-auto">
+<div class="flex flex-col items-center gap-1 text-[#9dabb9]">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">בית</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined">movie</span>
+<span class="text-[10px] font-bold">סיפורים</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-[#9dabb9]">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-[10px] font-medium">קהילה</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-[#9dabb9]">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">פרופיל</span>
+</div>
+</div>
+</div>
+</body></html>

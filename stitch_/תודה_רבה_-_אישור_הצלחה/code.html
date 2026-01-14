@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>תודה רבה - אישור הצלחה</title>
+<!-- Google Fonts: Material Symbols & Hebrew Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Rubik:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#eebd2b",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221d10", // Kept from config, but we will override main bg to Navy as requested
+                        "navy-deep": "#0a192f",
+                        "navy-card": "#112240",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Rubik", "sans-serif"],
+                        "body": ["Rubik", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "2xl": "2rem", "full": "9999px" },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hiding for clean UI */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glass-panel {
+            background: rgba(17, 34, 64, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-navy-deep text-white font-body selection:bg-primary/30">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden group/design-root">
+<!-- Header Image Section with Gradient -->
+<div class="relative w-full h-[40vh] min-h-[300px]">
+<!-- Hero Image -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat" data-alt="Soldier silhouette looking at sunrise with golden light" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDP25VeWgpdLuDWRED9mg4LoPIpPM3K48xOO5YrFTBIJam95V2MfYcIcOVB3T73eeZKh3fWJXT16-1fOcVKwQ6aSGRqFxim5CVGJ0Q6uTo0bIhklqHkahq6j5WFGL_-JudBB4PNN1XG9SF5_lP5pnHdkTdamfG7cPxkLKaM16uOKHotXMlKeCqrsUKmsnaos_yNxXvY5GQ6dblfM9E6tMMTGam6YEOSx3MuKMLlb7j0nzzALyXETOlgit_d_9QaVHOrMHkqs84bNw4');">
+</div>
+<!-- Gradient Overlays for smooth blending -->
+<div class="absolute inset-0 bg-gradient-to-b from-navy-deep/30 via-navy-deep/60 to-navy-deep"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent"></div>
+</div>
+<!-- Main Content Container (Glassmorphism Card) -->
+<div class="relative z-10 flex flex-col items-center px-4 -mt-20 pb-12 w-full max-w-md mx-auto">
+<!-- Success Icon -->
+<div class="mb-6 relative">
+<div class="absolute inset-0 bg-primary/20 rounded-full blur-xl animate-pulse-slow"></div>
+<div class="relative bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-full p-6 shadow-[0_0_30px_rgba(238,189,43,0.3)]">
+<span class="material-symbols-outlined text-primary text-[64px] font-variation-settings-'FILL'1">check_circle</span>
+</div>
+</div>
+<!-- Text Content -->
+<div class="glass-panel w-full rounded-2xl p-8 flex flex-col items-center text-center shadow-2xl ring-1 ring-white/5">
+<h1 class="text-white font-display text-3xl font-bold leading-tight mb-3 tracking-tight">
+                    תודה רבה על השותפות!
+                </h1>
+<p class="text-gray-300 text-lg font-normal leading-relaxed mb-8">
+                    הפנייה/התרומה שלך התקבלה בהצלחה ותסייע לנו להמשיך להוביל ולעשות טוב.
+                </p>
+<!-- Divider -->
+<div class="w-16 h-1 bg-primary/30 rounded-full mb-8"></div>
+<!-- Social Sharing Section -->
+<div class="w-full flex flex-col items-center gap-4 mb-8">
+<h2 class="text-primary text-sm font-bold uppercase tracking-wider opacity-90">
+                        שתפו את הבשורה
+                    </h2>
+<div class="flex items-center justify-center gap-4 w-full">
+<!-- WhatsApp -->
+<button class="group flex items-center justify-center w-12 h-12 rounded-full bg-[#25D366]/10 border border-[#25D366]/20 hover:bg-[#25D366] transition-all duration-300">
+<svg aria-hidden="true" class="w-6 h-6 text-[#25D366] group-hover:text-white fill-current" viewbox="0 0 24 24">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+</svg>
+</button>
+<!-- Facebook -->
+<button class="group flex items-center justify-center w-12 h-12 rounded-full bg-[#1877F2]/10 border border-[#1877F2]/20 hover:bg-[#1877F2] transition-all duration-300">
+<svg aria-hidden="true" class="w-6 h-6 text-[#1877F2] group-hover:text-white fill-current" viewbox="0 0 24 24">
+<path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.048 0-2.733.984-2.733 2.583v1.388h3.84L17.633 15.71h-3.41v7.98h-5.122Z"></path>
+</svg>
+</button>
+<!-- Instagram -->
+<button class="group flex items-center justify-center w-12 h-12 rounded-full bg-[#E4405F]/10 border border-[#E4405F]/20 hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] transition-all duration-300">
+<svg aria-hidden="true" class="w-6 h-6 text-[#E4405F] group-hover:text-white fill-current" viewbox="0 0 24 24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069ZM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0Zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881Z"></path>
+</svg>
+</button>
+</div>
+</div>
+<!-- Footer Actions -->
+<div class="w-full flex flex-col gap-3 mt-2">
+<button class="w-full py-4 px-6 rounded-xl bg-primary text-navy-deep font-bold text-lg hover:bg-[#d4a825] transition-colors flex items-center justify-center gap-2">
+<span>חזרה לעמוד הבית</span>
+<span class="material-symbols-outlined text-xl">home</span>
+</button>
+<button class="w-full py-4 px-6 rounded-xl border border-white/20 text-gray-300 font-medium text-base hover:bg-white/5 transition-colors flex items-center justify-center gap-2">
+<span>קראו עוד בבלוג</span>
+<span class="material-symbols-outlined text-lg">arrow_back</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Background decorative elements for the "Royal" feel -->
+<div class="fixed top-1/4 left-0 w-64 h-64 bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="fixed bottom-0 right-0 w-80 h-80 bg-[#1877F2]/5 rounded-full blur-[100px] pointer-events-none"></div>
+</div>
+</body></html>
